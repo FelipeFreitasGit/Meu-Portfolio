@@ -1,0 +1,24 @@
+.mdl-layout {
+  position: fixed;
+}
+
+.mdl-layout__header {
+  background-color: rgb(113, 89, 193);
+}
+
+.mdl-navigation__link {
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  opacity: 100;
+}
+
+.mdl-navigation__link:hover {
+  text-shadow: 0 0 4px white;
+  padding-bottom: 3px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
