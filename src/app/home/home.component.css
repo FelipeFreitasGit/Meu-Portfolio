@@ -1,24 +1,96 @@
+header, main {
+  font-family: 'Roboto', sans-serif;
+}
+
 .mdl-layout {
   position: fixed;
 }
-
 .mdl-layout__header {
   background-color: rgb(113, 89, 193);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
-
 .mdl-navigation__link {
   font-size: 20px;
   color: white;
-  font-family: 'Roboto', sans-serif;
   opacity: 100;
 }
-
 .mdl-navigation__link:hover {
   text-shadow: 0 0 4px white;
   padding-bottom: 3px;
 }
-
 .flex {
   display: flex;
   justify-content: space-between;
+}
+.material-icons {
+  font-size: 1.8em;
+}
+
+.cabecalho-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.foto-home {
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 7%;
+  margin-bottom: 2%;
+  box-shadow: 0 10px 10px 0px #888888;
+}
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+.subtitulo-principal {
+  font-size: 1.5em;
+}
+.lingaguens {
+   -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+.foto-linguagem {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: aparece 2s;
+          animation: aparece 2s;
+}
+.angular {
+  top: 10%;
+  left: 20%;
+}
+.html {
+  top: 45%;
+  left: 5%;
+}
+.java {
+  top: 60%;
+  left: 20%;
+}
+.javascript {
+  top: 10%;
+  left: 70%;
+}
+.json {
+  top: 50%;
+  left: 65%;
+}
+.sql {
+  top: 70%;
+  left: 80%;
+}
+.tags {
+  top: 30%;
+  left: 90%;
+}
+.docker {
+  top: 40%;
+  left: 25%;
 }
