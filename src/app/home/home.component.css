@@ -95,3 +95,9 @@ h1 {
   top: 40%;
   left: 25%;
 }
+
+@media screen and (max-width: 886px) {
+  .media {
+    left: -99%;
+  }
+}

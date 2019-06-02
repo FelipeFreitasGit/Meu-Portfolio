@@ -2,16 +2,18 @@
   box-sizing: border-box;
 }
 
+main {
+  padding-right: 130px;
+  padding-left: 130px;
+}
+
 .sobre {
-  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .sobre .textoResumo{
-  margin-left: 70px;
-  margin-right: 70px;
   padding: 20px;
 }
 
@@ -34,8 +36,6 @@
 }
 
 .content-timeline {
-  padding-right: 130px;
-  padding-left: 130px;
   width: 100%;
 }
 
@@ -127,6 +127,10 @@
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 886px) {
+
+  main {
+    padding: 20px;
+  }
 
   .content-timeline {
     padding-right: 0;
