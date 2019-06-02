@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatProgressBarModule,
+         MatProgressSpinnerModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,10 @@ import { SobreComponent } from './sobre/sobre.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
