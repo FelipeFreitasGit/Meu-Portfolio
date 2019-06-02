@@ -144,6 +144,7 @@ h1 {
 mat-progress-bar {
   padding-bottom: 5px;
   margin-bottom: 20px;
+  background-color: #3f51b5;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
