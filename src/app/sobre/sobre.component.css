@@ -147,6 +147,29 @@ mat-progress-bar {
   background-color: #3f51b5;
 }
 
+.cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv p {
+  font-size: 1.2em;
+}
+
+.cv .material-icons {
+  font-size: 5em;
+  color: #3f51b5;
+}
+
+.cv .material-icons:active {
+  padding-top: 15px;
+}
+
+.cv .material-icons:active {
+  padding-top: 15px;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 886px) {
 

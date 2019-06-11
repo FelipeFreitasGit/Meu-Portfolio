@@ -6,7 +6,6 @@ header, main {
   position: fixed;
 }
 .mdl-layout__header {
-  background-color: rgb(113, 89, 193);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .mdl-navigation__link {
