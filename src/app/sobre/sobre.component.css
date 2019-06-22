@@ -44,7 +44,7 @@ h1 {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #3f51b5;
+  background-color: rgb(113, 89, 193) !important;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -67,7 +67,7 @@ h1 {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #3f51b5;
+  border: 4px solid rgb(113, 89, 193);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -144,7 +144,6 @@ h1 {
 mat-progress-bar {
   padding-bottom: 5px;
   margin-bottom: 20px;
-  background-color: #3f51b5;
 }
 
 .cv {
@@ -159,7 +158,7 @@ mat-progress-bar {
 
 .cv .material-icons {
   font-size: 5em;
-  color: #3f51b5;
+  color: rgb(113, 89, 193);
 }
 
 .cv .material-icons:active {

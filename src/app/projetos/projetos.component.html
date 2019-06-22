@@ -1,0 +1,13 @@
+<section>
+  <h1>Projetos no GitHub</h1>
+
+  <div class="projetos">
+    <div *ngFor="let jobs of projetos"
+          class="projetoBox">
+      <a title="{{jobs.name}} em GitHub" target="_blank" href="{{jobs.html_url}}">
+        <p>{{jobs.name}}</p>
+        <p>{{jobs.language}}</p>
+      </a>
+    </div>
+  </div>
+</section>
