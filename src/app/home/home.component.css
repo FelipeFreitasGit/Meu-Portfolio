@@ -10,7 +10,7 @@ header, main {
   background-color: #FAFAFA;
 }
 
-.page-content, app-sobre, app-projetos {
+.page-content, app-sobre, app-projetos, app-artigos {
   width: 95%;
   max-width: 1500px;
   margin-bottom: 30px;

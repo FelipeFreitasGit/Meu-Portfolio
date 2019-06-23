@@ -13,13 +13,15 @@ import { ProjetosComponent } from './projetos/projetos.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ProjetosService } from './projetos/projetos.service';
+import { ArtigosComponent } from './artigos/artigos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SobreComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    ArtigosComponent
   ],
   imports: [
     BrowserModule,

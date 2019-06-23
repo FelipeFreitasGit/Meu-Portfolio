@@ -1,0 +1,32 @@
+h1 {
+  font-size: 2.4em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artigos {
+  display: flex;
+  width: 100%;
+}
+
+.artigosSpecific {
+  margin: 3%;
+  border-radius: 5px;
+}
+
+.demo-card-wide.mdl-card {
+  width: 350px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('/assets/java_logo.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
