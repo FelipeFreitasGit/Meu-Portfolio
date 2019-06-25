@@ -14,6 +14,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjetosService } from './projetos/projetos.service';
 import { ArtigosComponent } from './artigos/artigos.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ArtigosComponent } from './artigos/artigos.component';
     HomeComponent,
     SobreComponent,
     ProjetosComponent,
-    ArtigosComponent
+    ArtigosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
