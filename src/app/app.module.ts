@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 import { MatProgressBarModule,
          MatProgressSpinnerModule } from '@angular/material';
 import { ProjetosComponent } from './projetos/projetos.component';
@@ -32,6 +33,7 @@ import { ContatoComponent } from './contato/contato.component';
     MatProgressBarModule,
     MatProgressSpinnerModule,
     HttpClientModule,
+    MatInputModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-PT' }],
