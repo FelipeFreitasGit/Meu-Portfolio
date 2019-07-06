@@ -16,8 +16,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProjetosService } from './projetos/projetos.service';
 import { ArtigosComponent } from './artigos/artigos.component';
 import { ContatoComponent } from './contato/contato.component';
-import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
+import { SenhaComponent } from './senha/senha.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { RouterModule } from '@angular/router';
     ProjetosComponent,
     ArtigosComponent,
     ContatoComponent,
+    LoginComponent,
+    SenhaComponent,
     AdminComponent
   ],
   imports: [
