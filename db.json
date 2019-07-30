@@ -1,0 +1,27 @@
+{
+  "sobre": [
+    {
+      "id": 1,
+      "nome": "Felipe Vasconcellos",
+      "cargo": "Analista de sistemas",
+      "resumo": "Atuação na área de tecnologia da informação, com foco em desenvolvimento de software com tecnologias atuais do mercado, sempre seguindo padrões de projetos atuais e trabalhando em equipes dinamicamente com metodologias ágeis.",
+      "empresa": [
+        {
+          "nome": "Indra",
+          "cargo": "Analista de sistemas",
+          "inicio": "21/02/1996",
+          "fim": "21/03/2018"
+        }
+      ],
+      "tarefas": "Desenvolver melhorias em microserviços Spring boot, aplicações SPA com Angular 5, trabalhando com banco de dados Oracle, implementar payloads na ZUP e fluxos no IBM Integration Bus.",
+      "Linguagem": [
+        {
+          "nome":"java",
+          "nivel":"23"
+        }
+      ],
+      "foto": null,
+      "curriculo": null
+    }
+  ]
+}
