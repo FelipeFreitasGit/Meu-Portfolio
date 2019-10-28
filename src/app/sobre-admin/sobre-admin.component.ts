@@ -19,6 +19,7 @@ export class SobreAdminComponent implements OnInit {
   public skillSubject = new BehaviorSubject([]);
   public listSkill: Array<Habilidades> = new Array<Habilidades>();
   public colunasGridNivel: string[];
+  panelOpenState = false;
 
   constructor(private sobreService: SobreService,
               private formBuilder: FormBuilder) {
