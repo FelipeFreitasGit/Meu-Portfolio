@@ -6,7 +6,7 @@ import { SenhaComponent } from './senha/senha.component';
 import { SobreAdminComponent } from './sobre-admin/sobre-admin.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'meu-portifolio',  pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'senha', component: SenhaComponent },
   { path: 'admin', component: SobreAdminComponent }

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  urlRepository: 'https://api.github.com/users/FelipeFreitasGit/repos'
 };
