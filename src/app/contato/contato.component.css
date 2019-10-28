@@ -32,3 +32,19 @@ h1 {
   font-size: 1.7em;
 }
 
+button {
+  background-color: rgb(113, 89, 193) !important;
+  color: white;
+}
+
+@media screen and (max-width: 886px) {
+  .contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .infoUteis {
+    text-align: center;
+  }
+}

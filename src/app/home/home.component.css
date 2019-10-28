@@ -118,4 +118,14 @@ h1 {
   .media {
     left: -99%;
   }
+
+  .mdl-layout__header-row{
+    padding: 1px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mdl-navigation__link {
+    padding-right: 2px;
+  }
 }

@@ -16,19 +16,17 @@
       </p>
     </div>
 
-    <!--<form class="form">
+    <form class="form" [formGroup]="formContact">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Nome">
+        <input matInput placeholder="Nome" formControlName="nome">
       </mat-form-field>
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="E-mail">
+        <input matInput placeholder="E-mail" formControlName="email" >
       </mat-form-field>
       <mat-form-field class="example-full-width">
-        <textarea matInput placeholder="Escreva seu comentário"></textarea>
+        <textarea matInput placeholder="Escreva seu comentário" formControlName="comment" ></textarea>
       </mat-form-field>
-      <a href="#">
-          <i class="material-icons">send</i>
-      </a>
-    </form>-->
+      <button mat-button>Enviar</button>
+    </form>
   </div>
 </section>

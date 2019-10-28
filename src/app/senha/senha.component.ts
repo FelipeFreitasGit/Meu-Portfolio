@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-senha',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SenhaComponent implements OnInit {
 
-  constructor() { }
+  public formSenha: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+
+    this.formSenha = this.formBuilder.group({
+      email: [null]
+    })
   }
 
 }

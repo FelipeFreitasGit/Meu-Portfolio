@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { SobreService } from './sobre-admin.service';
-import { Usuario } from './sobre-admin.model';
+import { Usuario, Habilidades } from './sobre-admin.model';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-sobre-admin',
@@ -12,12 +13,19 @@ import { FormBuilder } from '@angular/forms';
 })
 export class SobreAdminComponent implements OnInit {
 
-  usuario: Usuario[]
-  public idUsuario: number
-  formUser: FormGroup
+  public usuario: Usuario[];
+  public formUser: FormGroup;
+  public habilidades = new Habilidades();
+  public skillSubject = new BehaviorSubject([]);
+  public listSkill: Array<Habilidades> = new Array<Habilidades>();
+  public colunasGridNivel: string[];
 
   constructor(private sobreService: SobreService,
-              private formBuilder: FormBuilder) { }
+              private formBuilder: FormBuilder) {
+
+    this.colunasGridNivel = ['Nome', 'Nivel'];
+  }
+
 
   ngOnInit() {
     this.sobreService.getUsuario()
@@ -28,6 +36,7 @@ export class SobreAdminComponent implements OnInit {
       })
 
       this.formUser = this.formBuilder.group({
+        id: [],
         nome: [null, Validators.required],
         cargo: [null, Validators.required],
         resumo: [null, Validators.required],
@@ -39,18 +48,17 @@ export class SobreAdminComponent implements OnInit {
         }),
         tarefas: [null, Validators.required],
         habilidades: this.formBuilder.group({
-          nome: [null, Validators.required],
-          nivel: [null, Validators.required],
+          nome: [''],
+          nivel: [''],
         }),
         foto: [],
         curriculo: [],
       })
   }
 
-
-
-  onSubmit() {
+  public onSubmit() {
     let user: Usuario = new Usuario(
+      this.formUser.value.id,
       this.formUser.value.nome,
       this.formUser.value.cargo,
       this.formUser.value.resumo,
@@ -62,13 +70,40 @@ export class SobreAdminComponent implements OnInit {
     )
 
     this.sobreService.addUsuario(user)
-      .subscribe((idUser: any) => {
-        this.idUsuario = idUser
+      .subscribe(() => {
+        console.log(user)
+        this.formUser.reset();
+        this.usuario.push(user)
       })
     console.warn(this.formUser.value);
   }
 
-  skills: Habilidades[] = [
+  public removeUsuario(user: Usuario) {
+    this.sobreService.removerUsuario(user)
+      .subscribe(() => {
+
+        this.usuario.forEach(x => {
+          if(user == x) {
+            this.usuario.filter(x => x != x)
+            console.log('usuario deletado', x)
+          }
+        })
+        console.log('Usuario Request', user)
+      })
+  }
+
+  public addSkills() {
+
+    let habilidades = new Habilidades(
+      this.formUser.value.habilidades.nome,
+      this.formUser.value.habilidades.nivel
+    )
+
+    this.listSkill.push(habilidades);
+    this.skillSubject.next(this.listSkill);
+  }
+
+  niveis: NivelSkill[] = [
     {nivel: '10%'},
     {nivel: '20%'},
     {nivel: '30%'},
@@ -80,9 +115,8 @@ export class SobreAdminComponent implements OnInit {
     {nivel: '90%'},
     {nivel: '100%'},
   ];
-
 }
 
-export interface Habilidades {
+export interface NivelSkill {
   nivel: string
 }

@@ -1,0 +1,137 @@
+<div class="sobre">
+  <div class="sobreMain">
+    <h1> Cadastro </h1>
+    <form class="formulario" [formGroup]="formUser" (ngSubmit)="onSubmit()">
+      <section>
+        <mat-form-field >
+          <input matInput placeholder="Nome" value="" formControlName="nome" required>
+        </mat-form-field>
+      </section>
+      <section>
+        <mat-form-field>
+          <input matInput placeholder="Cargo" value="" formControlName="cargo" required>
+        </mat-form-field>
+      </section>
+      <section>
+        <mat-form-field appearance="fill" >
+          <mat-label>Resumo</mat-label>
+          <textarea matInput placeholder="Resumo" formControlName="resumo" required></textarea>
+        </mat-form-field>
+      </section>
+      <section formGroupName="empresa">
+        <mat-form-field >
+          <input matInput placeholder="Empresa" value="" formControlName="nome" required>
+        </mat-form-field>
+
+        <mat-form-field >
+          <input matInput placeholder="Cargo" value="" formControlName="cargo" required>
+        </mat-form-field>
+
+        <mat-form-field >
+          <input matInput type="date" placeholder="Data Inicio" value="" formControlName="inicio" required>
+        </mat-form-field>
+
+        <mat-form-field >
+          <input matInput type="date" placeholder="Data Fim" value="" formControlName="fim" required>
+        </mat-form-field>
+      </section>
+      <section>
+        <mat-form-field  appearance="fill">
+          <mat-label>Atividades</mat-label>
+          <textarea matInput placeholder="Tarefas" formControlName="tarefas" required></textarea>
+        </mat-form-field>
+      </section>
+      <section class="skillFlex">
+        <mat-accordion class="row">
+          <mat-expansion-panel formGroupName="habilidades">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                habilidades
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-form-field >
+              <input matInput placeholder="Nome" formControlName="nome">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Nivel</mat-label>
+              <mat-select formControlName="nivel">
+                <mat-option *ngFor="let nivell of niveis" [value]="nivell.nivel">
+                  {{nivell.nivel}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+          </mat-expansion-panel>
+        </mat-accordion>
+
+        <mat-chip (click)="addSkills()" selected><i class="material-icons add">add_circle</i> </mat-chip>
+      </section>
+      <section class="mat-table-skill">
+        <table mat-table  [dataSource]="skillSubject" class="mat-elevation-z8">
+
+          <ng-container matColumnDef="Nome">
+            <th mat-header-cell *matHeaderCellDef> Nome da Habilidade </th>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="Nivel">
+            <th mat-header-cell *matHeaderCellDef> Nivel da maturidade </th>
+            <td mat-cell *matCellDef="let element"> {{element.nivel}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="colunasGridNivel"></tr>
+          <tr mat-row *matRowDef="let row; columns: colunasGridNivel;"></tr>
+        </table>
+      </section>
+      <section>
+        <label class="fileContainer">
+          Foto <br>
+          <i class="material-icons icons ">cloud_upload</i>
+          <input type="file" formControlName="foto"/>
+        </label>
+      </section>
+      <section>
+        <label class="fileContainer">
+          Curriculo <br>
+          <i class="material-icons icons ">cloud_upload</i>
+          <input type="file" formControlName="curriculo"/>
+        </label>
+      </section>
+      <section class="buttons">
+        <button class="save" type="submit" [disabled]="formUser.invalid"> Salvar</button>
+        <a [routerLink]="['']"><i class="material-icons sair">exit_to_app</i></a>
+      </section>
+    </form>
+
+  </div>
+  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Nome</th>
+      <th>Cargo</th>
+      <th>Empresa</th>
+      <th>Editar</th>
+      <th>Excluir</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of usuario">
+      <td class="mdl-data-table__cell--non-numeric">{{user.nome}}</td>
+      <td>{{user.cargo}}</td>
+      <td>{{user.empresa}}</td>
+      <td>
+        <button class="buttonAdd" (click)="removeUsuario(user.id)">
+          <i class="material-icons edit">edit</i>
+        </button>
+      </td>
+      <td>
+        <button class="buttonAdd" (click)="removeUsuario(user)">
+          <i class="material-icons delete">delete</i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>

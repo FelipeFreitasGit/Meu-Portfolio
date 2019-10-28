@@ -12,8 +12,7 @@ import { ArtigosComponent } from './artigos/artigos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { LoginComponent } from './login/login.component';
 import { SenhaComponent } from './senha/senha.component';
-import { AdminComponent } from './admin/admin.component';
-import { SobreAdminComponent } from './admin/sobre-admin/sobre-admin.component';
+import { SobreAdminComponent } from './sobre-admin/sobre-admin.component';
 
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatBadgeModule} from '@angular/material/badge';
@@ -50,6 +49,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -61,7 +61,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContatoComponent,
     LoginComponent,
     SenhaComponent,
-    AdminComponent,
     SobreAdminComponent,
   ],
   imports: [
@@ -108,7 +107,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatTreeModule,
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'pt-PT' }],
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: LOCALE_ID, useValue: 'pt-PT' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

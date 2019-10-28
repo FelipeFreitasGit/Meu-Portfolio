@@ -1,6 +1,7 @@
 export class Usuario {
 
   constructor(
+    public id: number,
     public nome: string,
     public cargo: string,
     public resumo: string,
@@ -13,13 +14,12 @@ export class Usuario {
 }
 
 export class Empresa {
-  nome: string
-  cargo: string
-  inicio: Date
-  fim: Date
+  public nome: string;
+  public cargo: string;
+  public inicio: Date;
+  public fim: Date;
 }
 
 export class Habilidades {
-  nome: string
-  nivel: number
+  constructor(public nome?: string, public nivel?: number) {};
 }

@@ -1,68 +1,160 @@
 {
   "usuario": [
     {
-      "id": 1,
-      "nome": "Felipe Vasconcellos",
-      "cargo": "Analista de sistemas",
-      "resumo": "Atuação na área de tecnologia da informação, com foco em desenvolvimento de software com tecnologias atuais do mercado, sempre seguindo padrões de projetos atuais e trabalhando em equipes dinamicamente com metodologias ágeis.",
-      "empresa": [
-        {
-          "nome": "Indra",
-          "cargo": "Analista de sistemas",
-          "inicio": "21/02/1996",
-          "fim": "21/03/2018"
-        }
-      ],
-      "tarefas": "Desenvolver melhorias em microserviços Spring boot, aplicações SPA com Angular 5, trabalhando com banco de dados Oracle, implementar payloads na ZUP e fluxos no IBM Integration Bus.",
-      "habilidades": [
-        {
-          "nome": "java",
-          "nivel": "23"
-        }
-      ],
+      "id": 4,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
+      "empresa": {
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "lklk",
+      "habilidades": {
+        "nome": "lklk",
+        "nivel": "20%"
+      },
       "foto": null,
       "curriculo": null
     },
     {
-      "nome": "knknkn",
-      "cargo": "knknk",
-      "resumo": "nkn",
+      "id": 5,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
       "empresa": {
-        "nome": "kkn",
-        "cargo": "knk",
-        "inicio": "nkn",
-        "fim": "knk"
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
       },
-      "tarefas": "nkn",
+      "tarefas": "lklk",
       "habilidades": {
-        "nome": "",
-        "nivel": ""
+        "nome": "lklk",
+        "nivel": "20%"
       },
-      "foto": "C:\\fakepath\\Alex Joias.pdf",
-      "curriculo": "",
-      "id": 2
+      "foto": null,
+      "curriculo": null
     },
     {
-      "nome": "jhj",
-      "cargo": "jhjh",
-      "resumo": "jh",
+      "id": 7,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
       "empresa": {
-        "nome": "jh",
-        "cargo": "jhjh",
-        "inicio": "1997-02-01",
-        "fim": "1111-11-11"
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
       },
-      "tarefas": "jkjjk",
+      "tarefas": "lklk",
       "habilidades": {
-        "nome": "",
-        "nivel": ""
+        "nome": "lklk",
+        "nivel": "20%"
       },
-      "foto": "",
-      "curriculo": "",
-      "id": 3
+      "foto": null,
+      "curriculo": null
     },
     {
-      "nome": "felipe",
+      "id": 9,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
+      "empresa": {
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "lklk",
+      "habilidades": {
+        "nome": "lklk",
+        "nivel": "20%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 10,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
+      "empresa": {
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "lklk",
+      "habilidades": {
+        "nome": "lklk",
+        "nivel": "20%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 11,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
+      "empresa": {
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "lklk",
+      "habilidades": {
+        "nome": "lklk",
+        "nivel": "20%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 13,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
+      "empresa": {
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "lklk",
+      "habilidades": {
+        "nome": "lklk",
+        "nivel": "20%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 14,
+      "nome": "jkjkjkj",
+      "cargo": "kjkj",
+      "resumo": "kjkj",
+      "empresa": {
+        "nome": "kjk",
+        "cargo": "ioi",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "lklk",
+      "habilidades": {
+        "nome": "lklk",
+        "nivel": "20%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 17,
+      "nome": null,
       "cargo": null,
       "resumo": null,
       "empresa": {
@@ -73,89 +165,14 @@
       },
       "tarefas": null,
       "habilidades": {
-        "nome": null,
-        "nivel": null
+        "nome": "",
+        "nivel": ""
       },
       "foto": null,
-      "curriculo": null,
-      "id": 4
+      "curriculo": null
     },
     {
-      "nome": "ricardo",
-      "cargo": "",
-      "resumo": null,
-      "empresa": {
-        "nome": null,
-        "cargo": null,
-        "inicio": null,
-        "fim": null
-      },
-      "tarefas": null,
-      "habilidades": {
-        "nome": null,
-        "nivel": null
-      },
-      "foto": null,
-      "curriculo": null,
-      "id": 5
-    },
-    {
-      "nome": "oi",
-      "cargo": "",
-      "resumo": null,
-      "empresa": {
-        "nome": null,
-        "cargo": null,
-        "inicio": null,
-        "fim": null
-      },
-      "tarefas": null,
-      "habilidades": {
-        "nome": null,
-        "nivel": null
-      },
-      "foto": null,
-      "curriculo": null,
-      "id": 6
-    },
-    {
-      "nome": "legal",
-      "resumo": null,
-      "empresa": {
-        "nome": null,
-        "cargo": null,
-        "inicio": null,
-        "fim": null
-      },
-      "tarefas": null,
-      "habilidades": {
-        "nome": null,
-        "nivel": null
-      },
-      "foto": null,
-      "curriculo": null,
-      "id": 7
-    },
-    {
-      "nome": "fefefefe",
-      "cargo": "",
-      "resumo": null,
-      "empresa": {
-        "nome": null,
-        "cargo": null,
-        "inicio": null,
-        "fim": null
-      },
-      "tarefas": null,
-      "habilidades": {
-        "nome": null,
-        "nivel": null
-      },
-      "foto": null,
-      "curriculo": null,
-      "id": 8
-    },
-    {
+      "id": 18,
       "nome": null,
       "cargo": null,
       "resumo": null,
@@ -171,27 +188,1014 @@
         "nivel": null
       },
       "foto": null,
-      "curriculo": null,
-      "id": 9
+      "curriculo": null
     },
     {
-      "nome": "dede",
-      "cargo": "s2s2",
-      "resumo": "dededde",
+      "id": 20,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
       "empresa": {
-        "nome": "ded",
-        "cargo": "ded",
-        "inicio": "11111-11-11",
-        "fim": "111111-11-11"
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
       },
-      "tarefas": "s2s",
+      "tarefas": null,
       "habilidades": {
-        "nome": "2121",
-        "nivel": "50%"
+        "nome": "",
+        "nivel": ""
       },
       "foto": null,
-      "curriculo": null,
-      "id": 10
+      "curriculo": null
+    },
+    {
+      "id": 22,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 23,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 24,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 25,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 26,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 28,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 29,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 30,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 31,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 32,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 33,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 34,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 35,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 36,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 37,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 38,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 39,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 40,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 41,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 42,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 43,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 44,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 45,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 46,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 47,
+      "nome": "vasconcellos",
+      "cargo": "ti",
+      "resumo": "jiwiejdiwjef",
+      "empresa": {
+        "nome": "ijijij",
+        "cargo": "ijiij",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "jjkjjkj",
+      "habilidades": {
+        "nome": "html",
+        "nivel": "30%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 48,
+      "nome": "vasconcellos",
+      "cargo": "jkjk",
+      "resumo": "kjkj",
+      "empresa": {
+        "nome": "kjkj",
+        "cargo": "kjkj",
+        "inicio": "275760-08-08",
+        "fim": "275760-08-08"
+      },
+      "tarefas": "jjkjkj",
+      "habilidades": {
+        "nome": "html",
+        "nivel": "30%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 49,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 50,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 51,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 52,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 53,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 54,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 55,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 56,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 57,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 58,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 59,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 60,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 61,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 62,
+      "nome": "Freitas",
+      "cargo": "suporte",
+      "resumo": "rascunho",
+      "empresa": {
+        "nome": "indra",
+        "cargo": "kjkjk",
+        "inicio": "0001-01-01",
+        "fim": "0001-01-01"
+      },
+      "tarefas": "nada alem de nada",
+      "habilidades": {
+        "nome": "java ",
+        "nivel": "20%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 63,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 64,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 65,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 66,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "jbjb",
+        "nivel": "30%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 67,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": null,
+        "nivel": null
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 68,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 69,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 70,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 71,
+      "nome": null,
+      "cargo": null,
+      "resumo": null,
+      "empresa": {
+        "nome": null,
+        "cargo": null,
+        "inicio": null,
+        "fim": null
+      },
+      "tarefas": null,
+      "habilidades": {
+        "nome": "",
+        "nivel": ""
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 72,
+      "nome": "felipe",
+      "cargo": "vasconcellos",
+      "resumo": "resumo",
+      "empresa": {
+        "nome": "jii",
+        "cargo": "ijij",
+        "inicio": "275760-08-08",
+        "fim": "275760-08-08"
+      },
+      "tarefas": "ijjij",
+      "habilidades": {
+        "nome": "java script",
+        "nivel": "30%"
+      },
+      "foto": "C:\\fakepath\\Captura de tela de 2019-06-26 00-09-46.png",
+      "curriculo": null
+    },
+    {
+      "id": 73,
+      "nome": "Kelly",
+      "cargo": "haro",
+      "resumo": "jjkjk",
+      "empresa": {
+        "nome": "kjkjk",
+        "cargo": "kjkj",
+        "inicio": "275760-08-08",
+        "fim": "275760-08-08"
+      },
+      "tarefas": "lklkl",
+      "habilidades": {
+        "nome": "php",
+        "nivel": "70%"
+      },
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 74,
+      "nome": "Luciana",
+      "cargo": "Professora",
+      "resumo": "jwifwerf",
+      "empresa": {
+        "nome": "Escola",
+        "cargo": "njfnrjfnrjf",
+        "inicio": "275760-09-09",
+        "fim": "275760-09-09"
+      },
+      "tarefas": "rcrrcrrc",
+      "habilidades": {
+        "nome": "Portugues",
+        "nivel": "100%"
+      },
+      "foto": "C:\\fakepath\\BehaviorSubject.pdf",
+      "curriculo": "C:\\fakepath\\BehaviorSubject.pdf"
     }
   ]
 }

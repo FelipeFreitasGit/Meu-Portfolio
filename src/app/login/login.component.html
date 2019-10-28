@@ -1,15 +1,15 @@
 <div class="loginBory">
   <div>
     <h1>Acessar</h1>
-    <!--<form>
+    <form [formGroup]="formLogin">
       <section>
-        <input name="email" type="text" placeholder="Digite seu e-mail" value="">
+        <input name="email" type="text" placeholder="Digite seu e-mail" formControlName="email">
       </section>
       <section>
-        <input name="password" type="password" placeholder="Digite sua senha" value="">
+        <input name="password" type="password" placeholder="Digite sua senha" formControlName="senha">
       </section>
       <button type="submit" color="default"> Entrar</button>
       <a routerLink="/senha">Esqueci minha senha</a>
-    </form> -->
+    </form>
   </div>
 </div>
