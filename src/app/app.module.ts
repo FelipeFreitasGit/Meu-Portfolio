@@ -3,13 +3,8 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { SobreComponent } from './sobre/sobre.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProjetosComponent } from './projetos/projetos.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ArtigosComponent } from './artigos/artigos.component';
-import { ContatoComponent } from './contato/contato.component';
 import { LoginComponent } from './login/login.component';
 import { SenhaComponent } from './senha/senha.component';
 import { SobreAdminComponent } from './sobre-admin/sobre-admin.component';
@@ -34,7 +29,6 @@ import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
@@ -50,18 +44,16 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { HomeModule } from './home/home.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    SobreComponent,
-    ProjetosComponent,
-    ArtigosComponent,
-    ContatoComponent,
     LoginComponent,
     SenhaComponent,
     SobreAdminComponent,
+    NotFoundComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -90,7 +82,6 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     MatMenuModule,
     MatNativeDateModule,
     MatPaginatorModule,
-    MatProgressBarModule,
     MatProgressSpinnerModule,
     MatRadioModule,
     MatRippleModule,
@@ -105,6 +96,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+    HomeModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

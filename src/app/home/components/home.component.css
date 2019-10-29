@@ -115,17 +115,30 @@ h1 {
 }
 
 @media screen and (max-width: 886px) {
-  .media {
+  .mdl-layout-title, .media {
     left: -99%;
   }
-
-  .mdl-layout__header-row{
-    padding: 1px;
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-item {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 5px;
+  }
+  .mdl-layout__header-row {
+    padding: 3px;
   }
 }
 
 @media screen and (max-width: 640px) {
   .mdl-navigation__link {
-    padding-right: 2px;
+    padding: 10px
+  }
+  .mdl-navigation__link {
+    font-size: 1.3em;
   }
 }
