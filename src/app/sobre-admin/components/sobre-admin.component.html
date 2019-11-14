@@ -43,18 +43,18 @@
       </section>
       <section class="skillFlex">
         <mat-accordion class="row">
-          <mat-expansion-panel formGroupName="habilidades">
+          <mat-expansion-panel>
             <mat-expansion-panel-header>
               <mat-panel-title>
                 habilidades
               </mat-panel-title>
             </mat-expansion-panel-header>
-            <mat-form-field >
-              <input matInput placeholder="Nome" formControlName="nome">
+            <mat-form-field>
+              <input matInput placeholder="Nome" formControlName="nomeHabilidade">
             </mat-form-field>
             <mat-form-field>
               <mat-label>Nivel</mat-label>
-              <mat-select formControlName="nivel">
+              <mat-select formControlName="nivelHabilidade">
                 <mat-option *ngFor="let nivell of niveis" [value]="nivell.nivel">
                   {{nivell.nivel}}
                 </mat-option>
@@ -65,8 +65,7 @@
                               (closed)="panelOpenState = false">
           </mat-expansion-panel>
         </mat-accordion>
-
-        <mat-chip (click)="addSkills()" selected><i class="material-icons add">add_circle</i> </mat-chip>
+        <mat-chip (click)="addSkill()" selected><i class="material-icons add">add_circle</i> </mat-chip>
       </section>
       <section class="mat-table-skill">
         <table mat-table  [dataSource]="skillSubject" class="mat-elevation-z8">

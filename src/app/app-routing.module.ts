@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SenhaComponent } from './senha/senha.component';
-import { SobreAdminComponent } from './sobre-admin/sobre-admin.component';
+import { SobreAdminComponent } from './sobre-admin/components/sobre-admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'meu-portifolio',  pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'senha', component: SenhaComponent },
-  { path: 'admin', component: SobreAdminComponent },
+  { path: 'admin', component: SobreAdminComponent  },
   { path: 'pagina-nao-encontrada', component: NotFoundComponent },
-  { path: '**', redirectTo: 'pagina-nao-encontrada' }
+  //{ path: '**', redirectTo: 'pagina-nao-encontrada' }
 ];
 
 @NgModule({

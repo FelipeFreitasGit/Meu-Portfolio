@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Usuario } from './sobre-admin.model';
 import { catchError } from 'rxjs/operators';
+import { Usuario } from '../models/sobre-admin.model';
 
 @Injectable()
 export class SobreService {

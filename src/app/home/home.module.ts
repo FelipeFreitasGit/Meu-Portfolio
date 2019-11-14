@@ -6,12 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjetosComponent } from '../projetos/projetos.component';
 import { ArtigosComponent } from '../artigos/artigos.component';
 import { ContatoComponent } from '../contato/contato.component';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
-import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
@@ -25,13 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     HomeRoutingModule,
-    MatProgressBarModule,
-    MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialModule
   ],
-  providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
-    { provide: LOCALE_ID, useValue: 'pt-PT' }
-  ]
+  providers: []
 })
 export class HomeModule { }
