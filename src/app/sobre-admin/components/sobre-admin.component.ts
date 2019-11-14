@@ -15,13 +15,16 @@ export class SobreAdminComponent implements OnInit {
   public usuario: Usuario[];
   public formUser: FormGroup;
   public skillSubject = new Subject<any>();
+  public empresaSubject = new Subject<any>();
   public colunasGridNivel: string[];
+  public colunasGridEmpresa: string[];
   panelOpenState = false;
 
   constructor(private sobreService: SobreService,
               private formBuilder: FormBuilder) {
 
     this.colunasGridNivel = ['Nome', 'Nivel'];
+    this.colunasGridEmpresa = ['nome', 'cargo', 'inicio', 'fim'];
   }
 
   ngOnInit() {
@@ -33,16 +36,15 @@ export class SobreAdminComponent implements OnInit {
       nome: [null, Validators.required],
       cargo: [null, Validators.required],
       resumo: [null, Validators.required],
-      empresa: this.formBuilder.group({
-        nome: [null, Validators.required],
-        cargo: [null, Validators.required],
-        inicio: [null, Validators.required],
-        fim: [null, Validators.required],
-      }),
+      empresa: this.formBuilder.array([]),
+      empresa_nome: [null, Validators.required],
+      empresa_cargo: [null, Validators.required],
+      empresa_inicio: [null, Validators.required],
+      empresa_fim: [null, Validators.required],
       tarefas: [null, Validators.required],
       habilidades: this.formBuilder.array([]),
-      nomeHabilidade: [''],
-      nivelHabilidade: [''],
+      habilidades_nome: [''],
+      habilidades_nivel: [''],
       foto: [],
       curriculo: [],
     })
@@ -85,11 +87,23 @@ export class SobreAdminComponent implements OnInit {
   public addSkill() {
     const habilidade = this.formUser.controls.habilidades as FormArray;
     habilidade.push(this.formBuilder.group({
-      nome: this.formUser.value.nomeHabilidade,
-      nivel: this.formUser.value.nivelHabilidade,
+      nome: this.formUser.value.habilidades_nome,
+      nivel: this.formUser.value.habilidades_nivel,
     }));
     console.log(habilidade.value)
     this.skillSubject.next(habilidade.value);
+  }
+
+  public addEmpresa() {
+    const empresa = this.formUser.controls.empresa as FormArray;
+    empresa.push(this.formBuilder.group({
+      nome: this.formUser.value.empresa_nome,
+      cargo: this.formUser.value.empresa_cargo,
+      inicio: this.formUser.value.empresa_inicio,
+      fim: this.formUser.value.empresa_fim,
+    }));
+    console.log(empresa.value)
+    this.empresaSubject.next(empresa.value);
   }
 
   niveis: NivelSkill[] = [

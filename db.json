@@ -312,6 +312,84 @@
       "nivelHabilidade": "70%",
       "foto": null,
       "curriculo": null
+    },
+    {
+      "id": 81,
+      "nome": "João",
+      "cargo": "ti",
+      "resumo": "dendedueduned",
+      "empresa": [
+        {
+          "nome": "poli",
+          "cargo": "suporte",
+          "inicio": "111111-11-11",
+          "fim": "111111-11-11"
+        },
+        {
+          "nome": "Indra",
+          "cargo": "suporte",
+          "inicio": "111111-11-11",
+          "fim": "111111-11-11"
+        }
+      ],
+      "empresa_nome": "Indra",
+      "empresa_cargo": "suporte",
+      "empresa_inicio": "111111-11-11",
+      "empresa_fim": "111111-11-11",
+      "tarefas": "dede",
+      "habilidades": [
+        {
+          "nome": "dede",
+          "nivel": "50%"
+        },
+        {
+          "nome": "ewewew",
+          "nivel": "70%"
+        }
+      ],
+      "habilidades_nome": "ewewew",
+      "habilidades_nivel": "70%",
+      "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 82,
+      "nome": "Felipe",
+      "cargo": "jijj",
+      "resumo": "ijiji",
+      "empresa": [
+        {
+          "nome": "ji",
+          "cargo": "ijij",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
+        },
+        {
+          "nome": "dededed",
+          "cargo": "ijijdedededede",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
+        }
+      ],
+      "empresa_nome": "dededed",
+      "empresa_cargo": "ijijdedededede",
+      "empresa_inicio": "275760-08-08",
+      "empresa_fim": "275760-08-08",
+      "tarefas": "kdedede",
+      "habilidades": [
+        {
+          "nome": "deded",
+          "nivel": "50%"
+        },
+        {
+          "nome": "ddededededede",
+          "nivel": "70%"
+        }
+      ],
+      "habilidades_nome": "ddededededede",
+      "habilidades_nivel": "70%",
+      "foto": null,
+      "curriculo": null
     }
   ]
 }
