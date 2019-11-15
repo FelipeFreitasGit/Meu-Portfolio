@@ -1,8 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SobreService } from '../services/sobre-admin.service';
-import { Usuario, Habilidades } from '../models/sobre-admin.model';
+import { Usuario } from '../models/sobre-admin.model';
 import { FormGroup, FormBuilder, FormControl, Validators, FormArray } from '@angular/forms';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-sobre-admin',
@@ -23,7 +24,8 @@ export class SobreAdminComponent implements OnInit {
   panelOpenState = false;
 
   constructor(private sobreService: SobreService,
-              private formBuilder: FormBuilder) {
+              private formBuilder: FormBuilder,
+              private _snackBar: MatSnackBar) {
 
     this.colunasGridNivel = ['Nome', 'Nivel'];
     this.colunasGridEmpresa = ['nome', 'cargo', 'inicio', 'fim'];
@@ -71,7 +73,7 @@ export class SobreAdminComponent implements OnInit {
         this.formUser.reset();
         const addUser = this.listUsuario()
         this.usuarioSubject.next(addUser);
-        this.skillSubject.closed;
+        this.openSnackBar('Usuario cadastro com sucesso!');
       })
     console.warn(this.formUser.value);
   }
@@ -79,15 +81,13 @@ export class SobreAdminComponent implements OnInit {
   public removeUsuario(user: Usuario) {
     this.sobreService.removerUsuario(user)
       .subscribe(() => {
-
-        this.usuario.forEach(x => {
-          if(user == x) {
-            this.usuario.filter(x => x != x)
-            console.log('usuario deletado', x)
-          }
-        })
-        console.log('Usuario Request', user)
+        this.listUsuario();
+        this.openSnackBar('Usuário removido com sucerro!')
       })
+  }
+
+  public editarUsuario() {
+    //alterar usuário
   }
 
   public listUsuario() {
@@ -120,6 +120,12 @@ export class SobreAdminComponent implements OnInit {
     }));
     console.log(empresa.value)
     this.empresaSubject.next(empresa.value);
+  }
+
+  openSnackBar(message: string, action?: string) {
+    this._snackBar.open(message, action, {
+      duration: 2000,
+    });
   }
 
   niveis: NivelSkill[] = [
