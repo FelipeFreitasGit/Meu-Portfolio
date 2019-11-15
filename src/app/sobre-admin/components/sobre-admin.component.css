@@ -102,11 +102,18 @@ mat-form-field {
   border-radius: 5px;
 }
 
+.icons-table {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .edit {
   color: rgb(113, 89, 193);
+  text-align: left;
 }
 .delete {
-  color:rgb(113, 89, 193);
+  color:red;
 }
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
@@ -138,5 +145,5 @@ mat-accordion {
 
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SobreService } from '../services/sobre-admin.service';
 import { Usuario, Habilidades } from '../models/sobre-admin.model';
 import { FormGroup, FormBuilder, FormControl, Validators, FormArray } from '@angular/forms';
@@ -16,7 +16,9 @@ export class SobreAdminComponent implements OnInit {
   public formUser: FormGroup;
   public skillSubject = new Subject<any>();
   public empresaSubject = new Subject<any>();
+  public usuarioSubject = new Subject<any>();
   public colunasGridNivel: string[];
+  public colunasGridUsario: string[];
   public colunasGridEmpresa: string[];
   panelOpenState = false;
 
@@ -25,6 +27,7 @@ export class SobreAdminComponent implements OnInit {
 
     this.colunasGridNivel = ['Nome', 'Nivel'];
     this.colunasGridEmpresa = ['nome', 'cargo', 'inicio', 'fim'];
+    this.colunasGridUsario = ['nome', 'cargo', 'editar', 'deletar']
   }
 
   ngOnInit() {
@@ -51,12 +54,24 @@ export class SobreAdminComponent implements OnInit {
   }
 
   public onSubmit() {
-    const user = this.formUser.value;
+    const user: Usuario = new Usuario(
+      this.formUser.value.id,
+      this.formUser.value.nome,
+      this.formUser.value.cargo,
+      this.formUser.value.resumo,
+      this.formUser.value.empresa,
+      this.formUser.value.tarefas,
+      this.formUser.value.habilidades,
+      this.formUser.value.foto,
+      this.formUser.value.curriculo);
+
     this.sobreService.addUsuario(user)
       .subscribe(() => {
         console.log(user)
         this.formUser.reset();
-        this.usuario.push(user)
+        const addUser = this.listUsuario()
+        this.usuarioSubject.next(addUser);
+        this.skillSubject.closed;
       })
     console.warn(this.formUser.value);
   }
@@ -78,7 +93,8 @@ export class SobreAdminComponent implements OnInit {
   public listUsuario() {
     this.sobreService.getUsuario()
     .subscribe((response: Usuario[]) => {
-      this.usuario = response
+      this.usuario = response;
+      this.usuarioSubject.next(response);
 
       console.log(this.usuario)
     })
