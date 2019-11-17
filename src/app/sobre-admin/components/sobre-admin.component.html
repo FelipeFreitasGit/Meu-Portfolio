@@ -118,26 +118,21 @@
           <tr mat-row *matRowDef="let row; columns: colunasGridNivel;"></tr>
         </table>
       </section>
-      <section>
+      <section class="buttons">
         <label class="fileContainer">
           Foto <br>
           <i class="material-icons icons ">cloud_upload</i>
-          <input type="file" formControlName="foto"/>
+          <input type="file" (change)="inputFileChangeFoto($event)" formControlName="foto"/>
         </label>
-      </section>
-      <section>
         <label class="fileContainer">
           Curriculo <br>
           <i class="material-icons icons ">cloud_upload</i>
-          <input type="file" formControlName="curriculo"/>
+          <input type="file" (change)="inputFileChangeCurriculo($event)" formControlName="curriculo"/>
         </label>
       </section>
       <section class="buttons">
         <button class="save" type="submit" [disabled]="formUser.invalid"> Salvar</button>
-        <div class="divWithIcon">
-          <label>Sair  </label>
-          <a [routerLink]="['']"><i class="material-icons sair">exit_to_app</i></a>
-        </div>
+        <button class="sair" [routerLink]="['']"> Sair</button>
       </section>
     </form>
 

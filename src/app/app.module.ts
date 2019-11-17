@@ -20,7 +20,6 @@ import { SobreAdminModule } from './sobre-admin/sobre-admin.module';
     AppComponent,
     LoginComponent,
     SenhaComponent,
-    SobreAdminComponent,
     NotFoundComponent,
   ],
   imports: [
@@ -31,7 +30,8 @@ import { SobreAdminModule } from './sobre-admin/sobre-admin.module';
     HttpClientModule,
     ReactiveFormsModule,
     MaterialModule,
-    HomeModule
+    HomeModule,
+    SobreAdminModule,
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

@@ -34,39 +34,6 @@
       "curriculo": null
     },
     {
-      "id": 89,
-      "nome": "Kelly",
-      "cargo": "arquiteta",
-      "resumo": "kjkj",
-      "empresa": [
-        {
-          "nome": "kjkjk",
-          "cargo": "kjkkj",
-          "inicio": "275760-08-08",
-          "fim": "275760-08-08"
-        },
-        {
-          "nome": "kjkjk",
-          "cargo": "kjkkj",
-          "inicio": "275760-08-08",
-          "fim": "275760-08-08"
-        }
-      ],
-      "tarefas": "mkmkkmmm",
-      "habilidades": [
-        {
-          "nome": "jhjhjh",
-          "nivel": "30%"
-        },
-        {
-          "nome": "jhjhjh",
-          "nivel": "50%"
-        }
-      ],
-      "foto": "C:\\fakepath\\comprovante_11_2019.jpeg",
-      "curriculo": "C:\\fakepath\\comprovante_11_2019.jpeg"
-    },
-    {
       "id": 90,
       "nome": "Fernando",
       "cargo": "adm",
@@ -133,6 +100,163 @@
         }
       ],
       "foto": null,
+      "curriculo": null
+    },
+    {
+      "id": 91,
+      "nome": "HAro",
+      "cargo": "jkjk",
+      "resumo": "kjkj",
+      "empresa": [
+        {
+          "nome": "kj",
+          "cargo": "jkjkj",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
+        }
+      ],
+      "tarefas": "nknkn",
+      "habilidades": [
+        {
+          "nome": "knkn",
+          "nivel": "50%"
+        }
+      ],
+      "foto": {},
+      "curriculo": null
+    },
+    {
+      "id": 92,
+      "nome": "Karina",
+      "cargo": "koko",
+      "resumo": "kokk",
+      "empresa": [
+        {
+          "nome": "oko",
+          "cargo": "koo",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        },
+        {
+          "nome": "oko",
+          "cargo": "koo",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        }
+      ],
+      "tarefas": "99mkm",
+      "habilidades": [
+        {
+          "nome": "kk",
+          "nivel": "50%"
+        },
+        {
+          "nome": "kk",
+          "nivel": "50%"
+        }
+      ],
+      "foto": "C:\\fakepath\\BehaviorSubject.pdf",
+      "curriculo": null
+    },
+    {
+      "id": 93,
+      "nome": "mkmkm",
+      "cargo": "mkm",
+      "resumo": "kmk",
+      "empresa": [
+        {
+          "nome": "mkm",
+          "cargo": "km",
+          "inicio": "0888-08-08",
+          "fim": "0088-08-08"
+        }
+      ],
+      "tarefas": "8",
+      "habilidades": [
+        {
+          "nome": "kkn",
+          "nivel": "30%"
+        }
+      ],
+      "foto": "Finanças Pessoais.xlsx",
+      "curriculo": null
+    },
+    {
+      "id": 94,
+      "nome": "kjkjkjk",
+      "cargo": "kjkjkjk",
+      "resumo": "jkjkjk",
+      "empresa": [
+        {
+          "nome": "jkjkj",
+          "cargo": "kjkkjkk",
+          "inicio": "88888-08-08",
+          "fim": "275760-08-08"
+        }
+      ],
+      "tarefas": "nnjnjn",
+      "habilidades": [
+        {
+          "nome": "nnnknk",
+          "nivel": "40%"
+        },
+        {
+          "nome": "nnnknk",
+          "nivel": "40%"
+        }
+      ],
+      "foto": "C:\\fakepath\\top-6-bibliotecas-javascript-para-desenvolvimento-web.jpg",
+      "curriculo": "comprovante_11_2019.jpeg"
+    },
+    {
+      "id": 95,
+      "nome": "nknk",
+      "cargo": "nknk",
+      "resumo": "nknknk",
+      "empresa": [
+        {
+          "nome": "n",
+          "cargo": "kn",
+          "inicio": "8888-08-08",
+          "fim": "275760-08-08"
+        }
+      ],
+      "tarefas": "nknk",
+      "habilidades": [],
+      "foto": "C:\\fakepath\\BehaviorSubject.pdf",
+      "curriculo": "C:\\fakepath\\BehaviorSubject.pdf"
+    },
+    {
+      "id": 96,
+      "nome": "Kelly",
+      "cargo": "iuiuiuiui",
+      "resumo": "kkjkjk",
+      "empresa": [
+        {
+          "nome": "jhjh",
+          "cargo": "jhjhj",
+          "inicio": "8888-08-08",
+          "fim": "275760-08-08"
+        },
+        {
+          "nome": "uuuuuu",
+          "cargo": "jhjhj",
+          "inicio": "8888-08-08",
+          "fim": "275760-08-08"
+        }
+      ],
+      "tarefas": "jkkjj",
+      "habilidades": [
+        {
+          "nome": "hjhjh",
+          "nivel": "40%"
+        },
+        {
+          "nome": "hjhjh",
+          "nivel": "40%"
+        }
+      ],
+      "foto": "top-6-bibliotecas-javascript-para-desenvolvimento-web.jpg",
       "curriculo": null
     }
   ]
