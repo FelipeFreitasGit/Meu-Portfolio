@@ -20,7 +20,6 @@ import { SobreAdminModule } from './sobre-admin/sobre-admin.module';
     AppComponent,
     LoginComponent,
     SenhaComponent,
-    SobreAdminComponent,
     NotFoundComponent,
   ],
   imports: [
