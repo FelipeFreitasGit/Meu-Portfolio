@@ -4,12 +4,12 @@
     <form class="formulario" [formGroup]="formUser" (ngSubmit)="onSubmit()">
       <section>
         <mat-form-field >
-          <input matInput placeholder="Nome" value="" formControlName="nome" required>
+          <input matInput placeholder="Nome" name="nome" formControlName="nome" required>
         </mat-form-field>
       </section>
       <section>
         <mat-form-field>
-          <input matInput placeholder="Função" value="" formControlName="cargo" required>
+          <input matInput placeholder="Função"  formControlName="cargo" required>
         </mat-form-field>
       </section>
       <section>
@@ -20,22 +20,25 @@
       </section>
       <section>
         <mat-form-field >
-          <input matInput placeholder="Empresa" value="" formControlName="empresa_nome" required>
+          <input matInput placeholder="Empresa"  formControlName="empresa_nome" required>
         </mat-form-field>
 
         <mat-form-field >
-          <input matInput placeholder="Cargo" value="" formControlName="empresa_cargo" required>
+          <input matInput placeholder="Cargo"  formControlName="empresa_cargo" required>
         </mat-form-field>
 
         <mat-form-field >
-          <input matInput type="date" placeholder="Data Inicio" value="" formControlName="empresa_inicio" required>
+          <input matInput type="date" placeholder="Data Inicio"  formControlName="empresa_inicio" required>
         </mat-form-field>
 
         <mat-form-field >
-          <input matInput type="date" placeholder="Data Fim" value="" formControlName="empresa_fim" required>
+          <input matInput type="date" placeholder="Data Fim"  formControlName="empresa_fim" required>
         </mat-form-field>
 
+        <div class="divWithIcon">
+          <label>Adicionar mais uma empresa:</label>
           <mat-chip (click)="addEmpresa()" selected><i class="material-icons add">add_circle</i></mat-chip>
+        </div>
       </section>
 
       <section class="mat-table-subject">
@@ -131,7 +134,10 @@
       </section>
       <section class="buttons">
         <button class="save" type="submit" [disabled]="formUser.invalid"> Salvar</button>
-        <a [routerLink]="['']"><i class="material-icons sair">exit_to_app</i></a>
+        <div class="divWithIcon">
+          <label>Sair  </label>
+          <a [routerLink]="['']"><i class="material-icons sair">exit_to_app</i></a>
+        </div>
       </section>
     </form>
 

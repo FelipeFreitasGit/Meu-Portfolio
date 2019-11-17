@@ -34,62 +34,102 @@
       "curriculo": null
     },
     {
-      "id": 86,
+      "id": 89,
       "nome": "Kelly",
       "cargo": "arquiteta",
-      "resumo": "lmm",
-      "empresa": [
-        {
-          "nome": "hhhhhh",
-          "cargo": "hhhhhhh",
-          "inicio": "275760-07-07",
-          "fim": "275760-07-07"
-        },
-        {
-          "nome": "uuuuuuuuuuu",
-          "cargo": "uuuuuuuuuuuuuuu",
-          "inicio": "275760-07-07",
-          "fim": "275760-07-07"
-        }
-      ],
-      "empresa_nome": "uuuuuuuuuuu",
-      "empresa_cargo": "uuuuuuuuuuuuuuu",
-      "empresa_inicio": "275760-07-07",
-      "empresa_fim": "275760-07-07",
-      "tarefas": "njnnjnjnjn",
-      "habilidades": [
-        {
-          "nome": "Java",
-          "nivel": "30%"
-        },
-        {
-          "nome": "jjjaaj",
-          "nivel": "100%"
-        }
-      ],
-      "habilidades_nome": "jjjaaj",
-      "habilidades_nivel": "100%",
-      "foto": null,
-      "curriculo": null
-    },
-    {
-      "id": 87,
-      "nome": "Ricardo",
-      "cargo": "kjkjk",
-      "resumo": "jkjkj",
+      "resumo": "kjkj",
       "empresa": [
         {
           "nome": "kjkjk",
-          "cargo": "kjkj",
-          "inicio": "8888-08-08",
-          "fim": "0888-08-08"
+          "cargo": "kjkkj",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
+        },
+        {
+          "nome": "kjkjk",
+          "cargo": "kjkkj",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
         }
       ],
-      "tarefas": "8lml",
+      "tarefas": "mkmkkmmm",
       "habilidades": [
         {
-          "nome": "kkjk",
-          "nivel": "20%"
+          "nome": "jhjhjh",
+          "nivel": "30%"
+        },
+        {
+          "nome": "jhjhjh",
+          "nivel": "50%"
+        }
+      ],
+      "foto": "C:\\fakepath\\comprovante_11_2019.jpeg",
+      "curriculo": "C:\\fakepath\\comprovante_11_2019.jpeg"
+    },
+    {
+      "id": 90,
+      "nome": "Fernando",
+      "cargo": "adm",
+      "resumo": "hhjkhkhhhhjhjkhjhjh",
+      "empresa": [
+        {
+          "nome": "jhjhjh",
+          "cargo": "jhk",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        },
+        {
+          "nome": "jhjhjh",
+          "cargo": "jhk",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        },
+        {
+          "nome": "jhjhjh",
+          "cargo": "jhk",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        },
+        {
+          "nome": "jhjhjh",
+          "cargo": "jhk",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        },
+        {
+          "nome": "jhjhjh",
+          "cargo": "jhk",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        },
+        {
+          "nome": "jhjhjh",
+          "cargo": "jhk",
+          "inicio": "275760-09-09",
+          "fim": "275760-09-09"
+        }
+      ],
+      "tarefas": "knknknknkn",
+      "habilidades": [
+        {
+          "nome": "deded",
+          "nivel": "30%"
+        },
+        {
+          "nome": "deded",
+          "nivel": "30%"
+        },
+        {
+          "nome": "deded",
+          "nivel": "30%"
+        },
+        {
+          "nome": "deded",
+          "nivel": "30%"
+        },
+        {
+          "nome": "deded",
+          "nivel": "30%"
         }
       ],
       "foto": null,

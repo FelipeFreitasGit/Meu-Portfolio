@@ -67,7 +67,7 @@ export class SobreAdminComponent implements OnInit {
       this.formUser.value.foto,
       this.formUser.value.curriculo);
 
-    this.sobreService.addUsuario(user)
+    this.sobreService.save(user)
       .subscribe(() => {
         console.log(user)
         this.formUser.reset();
@@ -79,19 +79,30 @@ export class SobreAdminComponent implements OnInit {
   }
 
   public removeUsuario(user: Usuario) {
-    this.sobreService.removerUsuario(user)
+    this.sobreService.remove(user)
       .subscribe(() => {
         this.listUsuario();
         this.openSnackBar('Usuário removido com sucerro!')
       })
   }
 
-  public editarUsuario() {
-    //alterar usuário
+  public editarUsuario(user: Usuario) {
+  //   this.formUser.get('nome').setValue(user.nome);
+  //   this.formUser.get('cargo').setValue(user.cargo);
+  //   this.formUser.get('resumo').setValue(user.resumo);
+  //   this.formUser.get('empresa_nome').setValue('teste');
+  //   this.formUser.get('empresa_cargo').setValue('Teste');
+  //   this.formUser.get('empresa_inicio').setValue('Teste');
+  //   this.formUser.get('empresa_fim').setValue('Teste');
+  //   this.formUser.get('tarefas').setValue(user.tarefas);
+  //   this.formUser.get('habilidades_nome').setValue('Teste');
+  //   this.formUser.get('habilidades_nivel').setValue('Teste');
+  //   this.formUser.get('foto').setValue('Teste');
+  //   this.formUser.get('curriculo').setValue('Teste');
   }
 
   public listUsuario() {
-    this.sobreService.getUsuario()
+    this.sobreService.getAll()
     .subscribe((response: Usuario[]) => {
       this.usuario = response;
       this.usuarioSubject.next(response);

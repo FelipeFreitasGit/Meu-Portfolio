@@ -142,3 +142,19 @@ h1 {
     font-size: 1.3em;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .mdl-navigation__link {
+    padding: 5px
+  }
+  .mdl-navigation__link {
+    font-size: 1.1em;
+  }
+  .flex-item {
+    align-items: center;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 2em;
+  }
+}

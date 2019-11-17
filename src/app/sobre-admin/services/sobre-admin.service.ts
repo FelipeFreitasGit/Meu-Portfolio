@@ -11,21 +11,28 @@ export class SobreService {
 
   constructor(private http: HttpClient) {}
 
-  getUsuario(): Observable<Usuario[]> {
+  getAll(): Observable<Usuario[]> {
     return this.http.get<Usuario[]>(this.API);
   }
 
-  addUsuario(usuario: Usuario): Observable<Usuario> {
+  save(usuario: Usuario): Observable<Usuario> {
     return this.http.post<Usuario>(this.API, usuario)
       .pipe(
         catchError(this.handleError<Usuario>('addUsuario'))
       )
   }
 
-  removerUsuario(user: Usuario): Observable<Usuario> {
+  remove(user: Usuario): Observable<Usuario> {
     return this.http.delete<Usuario>(`${this.API}/${user.id}`)
       .pipe(
         catchError(this.handleError<Usuario>('removerUsuario'))
+      )
+  }
+
+  update(usuario: Usuario): Observable<Usuario> {
+    return this.http.put<Usuario>(this.API, usuario)
+      .pipe(
+        catchError(this.handleError<Usuario>('UpdateUsuario'))
       )
   }
 
