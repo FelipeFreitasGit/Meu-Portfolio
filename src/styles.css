@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-.mdl-color-blue {
-  background-color: rgb(113, 89, 193) !important;
-}
 
 .mdl-color-red {
   background-color: #c00;
@@ -16,4 +13,12 @@ html, body {
 
 p {
   text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: rgba(0,0,0,.87);
 }

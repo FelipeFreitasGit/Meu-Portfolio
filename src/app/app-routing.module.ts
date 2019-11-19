@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: SobreAdminComponent  },
   { path: 'pagina-nao-encontrada', component: NotFoundComponent },
+  { path: 'senha', component: SenhaComponent }
   //{ path: '**', redirectTo: 'pagina-nao-encontrada' }
 ];
 

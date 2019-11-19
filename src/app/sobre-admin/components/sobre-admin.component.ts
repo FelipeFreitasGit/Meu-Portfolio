@@ -139,6 +139,22 @@ export class SobreAdminComponent implements OnInit {
     });
   }
 
+  inputFileChangeFoto(event) {
+    if (event.target.files && event.target.files[0]) {
+      const foto = event.target.files[0];
+
+      this.formUser.value.foto = foto.name;
+    }
+  }
+
+  inputFileChangeCurriculo(event) {
+    if (event.target.files && event.target.files[0]) {
+      const curriculo = event.target.files[0];
+
+      this.formUser.value.curriculo = curriculo.name;
+    }
+  }
+
   niveis: NivelSkill[] = [
     {nivel: '10%'},
     {nivel: '20%'},
