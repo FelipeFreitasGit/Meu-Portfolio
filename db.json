@@ -159,29 +159,6 @@
       "curriculo": null
     },
     {
-      "id": 93,
-      "nome": "mkmkm",
-      "cargo": "mkm",
-      "resumo": "kmk",
-      "empresa": [
-        {
-          "nome": "mkm",
-          "cargo": "km",
-          "inicio": "0888-08-08",
-          "fim": "0088-08-08"
-        }
-      ],
-      "tarefas": "8",
-      "habilidades": [
-        {
-          "nome": "kkn",
-          "nivel": "30%"
-        }
-      ],
-      "foto": "Finanças Pessoais.xlsx",
-      "curriculo": null
-    },
-    {
       "id": 94,
       "nome": "kjkjkjk",
       "cargo": "kjkjkjk",
@@ -257,6 +234,49 @@
         }
       ],
       "foto": "top-6-bibliotecas-javascript-para-desenvolvimento-web.jpg",
+      "curriculo": null
+    },
+    {
+      "id": 97,
+      "nome": "vfv",
+      "cargo": "vfv",
+      "resumo": "vfvfv",
+      "empresa": [
+        {
+          "nome": "vfvfv",
+          "cargo": "vfvfv",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
+        },
+        {
+          "nome": "vfvfv",
+          "cargo": "vfvfv",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
+        },
+        {
+          "nome": "vfvfv",
+          "cargo": "vfvfv",
+          "inicio": "275760-08-08",
+          "fim": "275760-08-08"
+        }
+      ],
+      "tarefas": "deded",
+      "habilidades": [
+        {
+          "nome": "deded",
+          "nivel": "50%"
+        },
+        {
+          "nome": "deded",
+          "nivel": "50%"
+        },
+        {
+          "nome": "deded",
+          "nivel": "50%"
+        }
+      ],
+      "foto": null,
       "curriculo": null
     }
   ]
