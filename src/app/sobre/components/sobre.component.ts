@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Subject } from 'rxjs';
+import { HomeService } from 'src/app/home/services/home.service';
 
 @Component({
   selector: 'app-sobre',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobreComponent implements OnInit {
 
-  constructor() { }
+  arrow: boolean;
+
+  constructor(
+    private router: Router,
+    private homeService: HomeService) {}
 
   ngOnInit() {
+    this.homeService.currentArrow.subscribe(action => this.arrow = action);
+  }
+
+  arrowTrue() {
+    this.router.navigate(['/sobre']);
+    this.homeService.actionArrow(true);
+  }
+
+  arrowFalse() {
+    this.router.navigate(['/']);
+    this.homeService.actionArrow(false);
   }
 
 }

@@ -1,6 +1,9 @@
 <main>
+  <a *ngIf="arrow" (click)="arrowFalse()">
+    <i class="material-icons arrow">keyboard_backspace</i>
+  </a>
   <div class="sobre">
-    <a href="#" routerLink="/sobre">
+    <a (click)="arrowTrue()">
       <h1 class="title">Resumo</h1>
     </a>
     <div class="textoResumo">

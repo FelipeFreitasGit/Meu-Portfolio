@@ -13,6 +13,8 @@ import { ArtigosModule } from '../artigos/artigos.module';
 import { ContatoModule } from '../contato/contato.module';
 import { ProjetosModule } from '../projetos/projetos.module';
 import { SobreModule } from '../sobre/sobre.module';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { HomeService } from './services/home.service';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { SobreModule } from '../sobre/sobre.module';
     ArtigosModule,
     ContatoModule,
     ProjetosModule,
-    SobreModule
+    SobreModule,
+    ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [HomeService],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class HomeModule { }
