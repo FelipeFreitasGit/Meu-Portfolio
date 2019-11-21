@@ -5,6 +5,8 @@ h1 {
 
 section {
   max-width: 95%;
+  padding-right: 130px;
+  padding-left: 130px;
 }
 
 .projetos {
@@ -48,4 +50,14 @@ section {
 
 .title:hover {
   font-size: 2.8em;
+}
+
+.arrow {
+  font-size: 3em;
+  margin: 10px;
+  color: rgba(0,0,0,.87);
+}
+
+.arrow:hover {
+  font-size: 4em;
 }

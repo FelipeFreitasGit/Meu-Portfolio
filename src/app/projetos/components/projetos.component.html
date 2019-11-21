@@ -1,5 +1,8 @@
 <section>
-  <a href="#" routerLink="/projetos">
+  <a *ngIf="arrow" (click)="arrowFalse()">
+    <i class="material-icons arrow">keyboard_backspace</i>
+  </a>
+  <a (click)="arrowTrue()">
     <h1 class="title">Projetos no GitHub</h1>
   </a>
   <div class="projetos">

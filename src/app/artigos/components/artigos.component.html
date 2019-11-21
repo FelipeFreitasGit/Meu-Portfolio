@@ -1,5 +1,10 @@
 <main>
-  <a href="#" routerLink="/artigos">
+
+  <a *ngIf="arrow" class="link" (click)="arrowFalse()">
+    <i class="material-icons arrow">keyboard_backspace</i>
+  </a>
+
+  <a (click)="arrowTrue()">
     <h1 class="title">Artigos</h1>
   </a>
 

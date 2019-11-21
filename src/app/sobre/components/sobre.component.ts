@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Subject } from 'rxjs';
 import { HomeService } from 'src/app/home/services/home.service';
 
 @Component({

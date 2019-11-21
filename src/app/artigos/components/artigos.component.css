@@ -6,6 +6,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 130px;
+  padding-left: 130px;
 }
 
 .artigos {
@@ -14,7 +16,7 @@ main {
 }
 
 .artigosSpecific {
-  margin: 3%;
+  margin: 1%;
   border-radius: 5px;
 }
 
@@ -34,4 +36,16 @@ main {
   font-size: 2.8em;
 }
 
+.arrow {
+  font-size: 3em;
+  margin: 10px;
+  color: rgba(0,0,0,.87);
+}
 
+.arrow:hover {
+  font-size: 4em;
+}
+
+.link {
+  align-self: flex-start;
+}
