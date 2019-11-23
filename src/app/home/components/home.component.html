@@ -15,12 +15,12 @@
     </div>
   </header>
 
-  <main class="mdl-layout__content" id="homeId">
+  <main class="mdl-layout__content" id="homeId" *ngFor="let user of usuario">
     <div class="page-content">
       <div class="cabecalho-principal">
         <img class="foto-home" src="assets/images/perfil.jpeg" alt="Foto de Felipe">
-        <h1>Felipe Vasconcellos</h1>
-        <p class="subtitulo-principal">Analista de Sistemas</p>
+        <h1>{{user.nome}}</h1>
+        <p class="subtitulo-principal">{{user.cargo}}</p>
         <div class="lingaguens">
           <img class="foto-linguagem angular media" src="assets/images/angular.png">
           <img class="foto-linguagem html media" src="assets/images/html.png">

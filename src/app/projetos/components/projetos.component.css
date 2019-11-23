@@ -9,6 +9,13 @@ section {
   padding-left: 130px;
 }
 
+@media screen and (max-width: 886px) {
+  section {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
 .projetos {
   display: flex;
   flex-wrap: wrap;

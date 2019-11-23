@@ -16,8 +16,9 @@ export class Usuario {
 export class Empresa {
   public nome: string;
   public cargo: string;
-  public inicio: Date;
-  public fim: Date;
+  public inicio: string;
+  public fim: string;
+  public atividades: string;
 }
 
 export class Habilidades {

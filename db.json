@@ -1,279 +1,57 @@
 {
   "usuario": [
     {
-      "id": 85,
-      "nome": "Felipe",
-      "cargo": "ti",
-      "resumo": "lklkl",
+      "id": 4,
+      "nome": "Felipe Vasconcellos",
+      "cargo": "Analista de Sistemas",
+      "resumo": "Atuação na área de tecnologia da informação, com foco em desenvolvimento de software com tecnologias atuais do mercado, sempre seguindo padrões de projetos atuais e trabalhando em equipes dinamicamente com metodologias ágeis.",
       "empresa": [
         {
-          "nome": "klklkk",
-          "cargo": "klkkl",
-          "inicio": "275760-08-08",
-          "fim": "275760-08-08"
-        }
-      ],
-      "empresa_nome": "klklkk",
-      "empresa_cargo": "klkkl",
-      "empresa_inicio": "275760-08-08",
-      "empresa_fim": "275760-08-08",
-      "tarefas": "kkjkjkjkj",
-      "habilidades": [
-        {
-          "nome": "deded",
-          "nivel": ""
+          "nome": "Indra | Minsait",
+          "cargo": "Analista de sistemas Junior",
+          "inicio": "2018-09-01",
+          "fim": "à Atual",
+          "atividades": "Desenvolver melhorias em microserviços Spring boot, aplicações SPA com Angular 5, trabalhando com banco de dados Oracle, implementar payloads na ZUP e fluxos no IBM Integration Bus."
         },
         {
-          "nome": "deded",
+          "nome": "Poli-Nutri Alimentos S.A",
+          "cargo": "Técnico de Informática I",
+          "inicio": "2016-01-01",
+          "fim": "2018-08-01",
+          "atividades": "Fornecer suporte técnico ao ERP Sapiens, desenvolvimento de relatórios e regras, desenvolvimento de software em java, desktop, web e aplicativos mobile. Tecnologias: Java EE, Java SE, JSF com Primefaces."
+        },
+        {
+          "nome": "Poli-Nutri Alimentos S.A",
+          "cargo": "Jovem Aprendiz",
+          "inicio": "2014-05-01",
+          "fim": "2015-12-01",
+          "atividades": "Fornecer suporte técnico ao ERP Sapiens, desenvolvimento de relatórios e regras, desenvolvimento de software em java, desktop, web e aplicativos mobile. Tecnologias: Java EE, Java SE, JSF com Primefaces."
+        }
+      ],
+      "tarefas": [
+        {
+          "nome": "Java",
+          "nivel": "70%"
+        },
+        {
+          "nome": "Angular",
+          "nivel": "60%"
+        },
+        {
+          "nome": "HTML",
+          "nivel": "80%"
+        },
+        {
+          "nome": "RXJS",
+          "nivel": "90%"
+        },
+        {
+          "nome": "NODE",
           "nivel": "40%"
         }
       ],
-      "habilidades_nome": "deded",
-      "habilidades_nivel": "40%",
-      "foto": null,
-      "curriculo": null
-    },
-    {
-      "id": 90,
-      "nome": "Fernando",
-      "cargo": "adm",
-      "resumo": "hhjkhkhhhhjhjkhjhjh",
-      "empresa": [
-        {
-          "nome": "jhjhjh",
-          "cargo": "jhk",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "jhjhjh",
-          "cargo": "jhk",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "jhjhjh",
-          "cargo": "jhk",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "jhjhjh",
-          "cargo": "jhk",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "jhjhjh",
-          "cargo": "jhk",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "jhjhjh",
-          "cargo": "jhk",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        }
-      ],
-      "tarefas": "knknknknkn",
-      "habilidades": [
-        {
-          "nome": "deded",
-          "nivel": "30%"
-        },
-        {
-          "nome": "deded",
-          "nivel": "30%"
-        },
-        {
-          "nome": "deded",
-          "nivel": "30%"
-        },
-        {
-          "nome": "deded",
-          "nivel": "30%"
-        },
-        {
-          "nome": "deded",
-          "nivel": "30%"
-        }
-      ],
-      "foto": null,
-      "curriculo": null
-    },
-    {
-      "id": 91,
-      "nome": "HAro",
-      "cargo": "jkjk",
-      "resumo": "kjkj",
-      "empresa": [
-        {
-          "nome": "kj",
-          "cargo": "jkjkj",
-          "inicio": "275760-08-08",
-          "fim": "275760-08-08"
-        }
-      ],
-      "tarefas": "nknkn",
-      "habilidades": [
-        {
-          "nome": "knkn",
-          "nivel": "50%"
-        }
-      ],
-      "foto": {},
-      "curriculo": null
-    },
-    {
-      "id": 92,
-      "nome": "Karina",
-      "cargo": "koko",
-      "resumo": "kokk",
-      "empresa": [
-        {
-          "nome": "oko",
-          "cargo": "koo",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "oko",
-          "cargo": "koo",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        }
-      ],
-      "tarefas": "99mkm",
-      "habilidades": [
-        {
-          "nome": "kk",
-          "nivel": "50%"
-        },
-        {
-          "nome": "kk",
-          "nivel": "50%"
-        }
-      ],
-      "foto": "C:\\fakepath\\BehaviorSubject.pdf",
-      "curriculo": null
-    },
-    {
-      "id": 94,
-      "nome": "kjkjkjk",
-      "cargo": "kjkjkjk",
-      "resumo": "jkjkjk",
-      "empresa": [
-        {
-          "nome": "jkjkj",
-          "cargo": "kjkkjkk",
-          "inicio": "88888-08-08",
-          "fim": "275760-08-08"
-        }
-      ],
-      "tarefas": "nnjnjn",
-      "habilidades": [
-        {
-          "nome": "nnnknk",
-          "nivel": "40%"
-        },
-        {
-          "nome": "nnnknk",
-          "nivel": "40%"
-        }
-      ],
-      "foto": "C:\\fakepath\\top-6-bibliotecas-javascript-para-desenvolvimento-web.jpg",
-      "curriculo": "comprovante_11_2019.jpeg"
-    },
-    {
-      "id": 95,
-      "nome": "nknk",
-      "cargo": "nknk",
-      "resumo": "nknknk",
-      "empresa": [
-        {
-          "nome": "n",
-          "cargo": "kn",
-          "inicio": "8888-08-08",
-          "fim": "275760-08-08"
-        }
-      ],
-      "tarefas": "nknk",
-      "habilidades": [],
-      "foto": "C:\\fakepath\\BehaviorSubject.pdf",
-      "curriculo": "C:\\fakepath\\BehaviorSubject.pdf"
-    },
-    {
-      "id": 96,
-      "nome": "Kelly",
-      "cargo": "iuiuiuiui",
-      "resumo": "kkjkjk",
-      "empresa": [
-        {
-          "nome": "jhjh",
-          "cargo": "jhjhj",
-          "inicio": "8888-08-08",
-          "fim": "275760-08-08"
-        },
-        {
-          "nome": "uuuuuu",
-          "cargo": "jhjhj",
-          "inicio": "8888-08-08",
-          "fim": "275760-08-08"
-        }
-      ],
-      "tarefas": "jkkjj",
-      "habilidades": [
-        {
-          "nome": "hjhjh",
-          "nivel": "40%"
-        },
-        {
-          "nome": "hjhjh",
-          "nivel": "40%"
-        }
-      ],
-      "foto": "top-6-bibliotecas-javascript-para-desenvolvimento-web.jpg",
-      "curriculo": null
-    },
-    {
-      "id": 98,
-      "nome": "dede",
-      "cargo": "dede",
-      "resumo": "deded",
-      "empresa": [
-        {
-          "nome": "deded",
-          "cargo": "deded",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "deded",
-          "cargo": "deded",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        },
-        {
-          "nome": "deded",
-          "cargo": "deded",
-          "inicio": "275760-09-09",
-          "fim": "275760-09-09"
-        }
-      ],
-      "tarefas": "kikik",
-      "habilidades": [
-        {
-          "nome": "kikik",
-          "nivel": "50%"
-        },
-        {
-          "nome": "kikik",
-          "nivel": "50%"
-        }
-      ],
-      "foto": "top-6-bibliotecas-javascript-para-desenvolvimento-web.jpg",
-      "curriculo": null
+      "habilidades": null,
+      "foto": null
     }
   ]
 }

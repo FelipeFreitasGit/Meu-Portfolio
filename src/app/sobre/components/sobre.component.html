@@ -1,4 +1,4 @@
-<main>
+<main *ngFor="let user of usuario">
   <a *ngIf="arrow" (click)="arrowFalse()">
     <i class="material-icons arrow">keyboard_backspace</i>
   </a>
@@ -7,9 +7,7 @@
       <h1 class="title">Resumo</h1>
     </a>
     <div class="textoResumo">
-      <p>Atuação na área de tecnologia da informação, com foco em desenvolvimento de software com tecnologias
-      atuais do mercado, sempre seguindo padrões de projetos atuais e trabalhando em equipes
-      dinamicamente com metodologias ágeis.</p>
+      <p>{{user.resumo}}</p>
     </div>
     <h1>Experiência</h1>
   </div>

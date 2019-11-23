@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, ViewChildren } from '@angular/core';
 import { SobreService } from '../services/sobre-admin.service';
 import { Usuario } from '../models/sobre-admin.model';
 import { FormGroup, FormBuilder, FormControl, Validators, FormArray } from '@angular/forms';
@@ -32,6 +32,8 @@ export class SobreAdminComponent implements OnInit {
     this.colunasGridUsario = ['nome', 'cargo', 'editar', 'deletar']
   }
 
+  @ViewChildren('ref') ref;
+
   ngOnInit() {
 
     this.listUsuario();
@@ -45,8 +47,9 @@ export class SobreAdminComponent implements OnInit {
       empresa_nome: [null, Validators.required],
       empresa_cargo: [null, Validators.required],
       empresa_inicio: [null, Validators.required],
-      empresa_fim: [null, Validators.required],
-      tarefas: [null, Validators.required],
+      empresa_fim: [''],
+      empresa_atual: [''],
+      empresa_atividades: [null, Validators.required],
       habilidades: this.formBuilder.array([]),
       habilidades_nome: [''],
       habilidades_nivel: [''],
@@ -62,7 +65,6 @@ export class SobreAdminComponent implements OnInit {
       this.formUser.value.cargo,
       this.formUser.value.resumo,
       this.formUser.value.empresa,
-      this.formUser.value.tarefas,
       this.formUser.value.habilidades,
       this.formUser.value.foto,
       this.formUser.value.curriculo);
@@ -94,7 +96,6 @@ export class SobreAdminComponent implements OnInit {
   //   this.formUser.get('empresa_cargo').setValue('Teste');
   //   this.formUser.get('empresa_inicio').setValue('Teste');
   //   this.formUser.get('empresa_fim').setValue('Teste');
-  //   this.formUser.get('tarefas').setValue(user.tarefas);
   //   this.formUser.get('habilidades_nome').setValue('Teste');
   //   this.formUser.get('habilidades_nivel').setValue('Teste');
   //   this.formUser.get('foto').setValue('Teste');
@@ -128,6 +129,7 @@ export class SobreAdminComponent implements OnInit {
       cargo: this.formUser.value.empresa_cargo,
       inicio: this.formUser.value.empresa_inicio,
       fim: this.formUser.value.empresa_fim,
+      atividades: this.formUser.value.empresa_atividades
     }));
     console.log(empresa.value)
     this.empresaSubject.next(empresa.value);
@@ -153,6 +155,10 @@ export class SobreAdminComponent implements OnInit {
 
       this.formUser.value.curriculo = curriculo.name;
     }
+  }
+
+  empresaAtual() {
+    this.formUser.get('empresa_fim').setValue('à Atual');
   }
 
   niveis: NivelSkill[] = [

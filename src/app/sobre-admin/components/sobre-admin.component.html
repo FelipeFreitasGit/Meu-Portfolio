@@ -31,8 +31,18 @@
           <input matInput type="date" placeholder="Data Inicio"  formControlName="empresa_inicio" required>
         </mat-form-field>
 
-        <mat-form-field >
-          <input matInput type="date" placeholder="Data Fim"  formControlName="empresa_fim" required>
+        <mat-form-field *ngIf="!termsAndConditions.checked">
+          <input matInput type="date" placeholder="Data Fim"  formControlName="empresa_fim">
+        </mat-form-field>
+
+        <mat-form-field *ngIf="termsAndConditions.checked">
+          <input matInput type="text" placeholder="Data Fim"  formControlName="empresa_fim">
+        </mat-form-field>
+
+        <mat-checkbox #termsAndConditions (click)="empresaAtual()" formControlName="empresa_atual">Empresa atual</mat-checkbox>
+
+        <mat-form-field appearance="fill">
+          <textarea matInput placeholder="Atividades" formControlName="empresa_atividades" required></textarea>
         </mat-form-field>
 
         <div class="divWithIcon">
@@ -69,12 +79,6 @@
         </table>
       </section>
 
-      <section>
-        <mat-form-field  appearance="fill">
-          <mat-label>Atividades</mat-label>
-          <textarea matInput placeholder="Tarefas" formControlName="tarefas" required></textarea>
-        </mat-form-field>
-      </section>
       <section class="skillFlex">
         <mat-accordion class="row">
           <mat-expansion-panel>

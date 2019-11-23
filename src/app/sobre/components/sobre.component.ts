@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HomeService } from 'src/app/home/services/home.service';
+import { SobreService } from 'src/app/sobre-admin/services/sobre-admin.service';
+import { Usuario } from 'src/app/sobre-admin/models/sobre-admin.model';
 
 @Component({
   selector: 'app-sobre',
@@ -11,12 +13,19 @@ export class SobreComponent implements OnInit {
 
   arrow: boolean;
 
+  public usuario: Usuario[];
+
   constructor(
     private router: Router,
-    private homeService: HomeService) {}
+    private homeService: HomeService,
+    private sobreService: SobreService) {}
 
   ngOnInit() {
     this.homeService.currentArrow.subscribe(action => this.arrow = action);
+
+    this.sobreService.getAll().subscribe((resp: Usuario[]) => {
+      this.usuario = resp;
+    })
   }
 
   arrowTrue() {

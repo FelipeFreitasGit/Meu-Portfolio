@@ -7,6 +7,13 @@ main {
   padding-left: 130px;
 }
 
+@media screen and (max-width: 886px) {
+  main {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
 .sobre {
   display: flex;
   flex-direction: column;
