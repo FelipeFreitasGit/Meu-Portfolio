@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HomeService } from 'src/app/home/services/home.service';
 import { SobreService } from 'src/app/sobre-admin/services/sobre-admin.service';
-import { Usuario } from 'src/app/sobre-admin/models/sobre-admin.model';
+import { Usuario, Empresa } from 'src/app/sobre-admin/models/sobre-admin.model';
 
 @Component({
   selector: 'app-sobre',
@@ -12,7 +12,8 @@ import { Usuario } from 'src/app/sobre-admin/models/sobre-admin.model';
 export class SobreComponent implements OnInit {
 
   arrow: boolean;
-
+  lado: string;
+  empresas = new Array<Empresas>();
   public usuario: Usuario[];
 
   constructor(
@@ -25,6 +26,10 @@ export class SobreComponent implements OnInit {
 
     this.sobreService.getAll().subscribe((resp: Usuario[]) => {
       this.usuario = resp;
+
+      this.usuario.forEach(emp => {
+        this.rightOrLeftTimeline(emp.empresa);
+      })
     })
   }
 
@@ -38,4 +43,30 @@ export class SobreComponent implements OnInit {
     this.homeService.actionArrow(false);
   }
 
+  rightOrLeftTimeline(empresa: Array<Empresa>) {
+
+    empresa.forEach(raiz => {
+      let copy = {
+          id : raiz.id,
+          nome : raiz.nome,
+          cargo : raiz.cargo,
+          inicio : raiz.inicio,
+          fim : raiz.fim,
+          atividades : raiz.atividades,
+          lado :  raiz.id / 2 == 1 ? 'right' :  'left'
+      }
+
+      this.empresas.push(copy);
+    });
+  }
+}
+
+export class Empresas {
+  public id: number;
+  public nome: string;
+  public cargo: string;
+  public inicio: string;
+  public fim: string;
+  public atividades: string;
+  public lado: string;
 }

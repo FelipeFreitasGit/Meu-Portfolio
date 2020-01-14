@@ -7,13 +7,15 @@
       "resumo": "Atuação na área de tecnologia da informação, com foco em desenvolvimento de software com tecnologias atuais do mercado, sempre seguindo padrões de projetos atuais e trabalhando em equipes dinamicamente com metodologias ágeis.",
       "empresa": [
         {
+          "id": 1,
           "nome": "Indra | Minsait",
           "cargo": "Analista de sistemas Junior",
           "inicio": "2018-09-01",
           "fim": "à Atual",
-          "atividades": "Desenvolver melhorias em microserviços Spring boot, aplicações SPA com Angular 5, trabalhando com banco de dados Oracle, implementar payloads na ZUP e fluxos no IBM Integration Bus."
+          "atividades": "Atuando como prestador de serviços no Banco Santander, desenvolver melhorias em microserviços Spring boot, aplicações SPA com Angular 5, trabalhando com banco de dados Oracle, implementar payloads na ZUP e fluxos no IBM Integration Bus."
         },
         {
+          "id": 2,
           "nome": "Poli-Nutri Alimentos S.A",
           "cargo": "Técnico de Informática I",
           "inicio": "2016-01-01",
@@ -21,6 +23,7 @@
           "atividades": "Fornecer suporte técnico ao ERP Sapiens, desenvolvimento de relatórios e regras, desenvolvimento de software em java, desktop, web e aplicativos mobile. Tecnologias: Java EE, Java SE, JSF com Primefaces."
         },
         {
+          "id": 3,
           "nome": "Poli-Nutri Alimentos S.A",
           "cargo": "Jovem Aprendiz",
           "inicio": "2014-05-01",

@@ -14,6 +14,7 @@ export class Usuario {
 }
 
 export class Empresa {
+  public id: number;
   public nome: string;
   public cargo: string;
   public inicio: string;

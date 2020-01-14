@@ -22,6 +22,7 @@ export class SobreAdminComponent implements OnInit {
   public colunasGridUsario: string[];
   public colunasGridEmpresa: string[];
   panelOpenState = false;
+  idEmp: number = 0;
 
   constructor(private sobreService: SobreService,
               private formBuilder: FormBuilder,
@@ -125,6 +126,7 @@ export class SobreAdminComponent implements OnInit {
   public addEmpresa() {
     const empresa = this.formUser.controls.empresa as FormArray;
     empresa.push(this.formBuilder.group({
+      id: this.idEmp++,
       nome: this.formUser.value.empresa_nome,
       cargo: this.formUser.value.empresa_cargo,
       inicio: this.formUser.value.empresa_inicio,
