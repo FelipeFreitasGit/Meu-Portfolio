@@ -23,6 +23,7 @@ export class SobreAdminComponent implements OnInit {
   public colunasGridEmpresa: string[];
   panelOpenState = false;
   idEmp: number = 0;
+  idSkill: number =0;
 
   constructor(private sobreService: SobreService,
               private formBuilder: FormBuilder,
@@ -116,6 +117,7 @@ export class SobreAdminComponent implements OnInit {
   public addSkill() {
     const habilidade = this.formUser.controls.habilidades as FormArray;
     habilidade.push(this.formBuilder.group({
+      id: this.idSkill++,
       nome: this.formUser.value.habilidades_nome,
       nivel: this.formUser.value.habilidades_nivel,
     }));
@@ -164,16 +166,16 @@ export class SobreAdminComponent implements OnInit {
   }
 
   niveis: NivelSkill[] = [
-    {nivel: '10%'},
-    {nivel: '20%'},
-    {nivel: '30%'},
-    {nivel: '40%'},
-    {nivel: '50%'},
-    {nivel: '60%'},
-    {nivel: '70%'},
-    {nivel: '80%'},
-    {nivel: '90%'},
-    {nivel: '100%'},
+    {nivel: '10'},
+    {nivel: '20'},
+    {nivel: '30'},
+    {nivel: '40'},
+    {nivel: '50'},
+    {nivel: '60'},
+    {nivel: '70'},
+    {nivel: '80'},
+    {nivel: '90'},
+    {nivel: '100'},
   ];
 }
 

@@ -26,54 +26,12 @@
     </div>
   </div>
 
-  <div class="skills">
-    <h1>Habilidades</h1>
-
+  <h1 class="skills">Habilidades</h1>
+  <div class="skills" *ngFor="let skill of user.habilidades">
     <div class="skillLinguage">
-      <p>Java</p> <p>70%</p>
+      <p>{{skill.nome}}</p> <p>{{skill.nivel}}%</p>
     </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="70"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>Spring Framework</p> <p>40%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="40"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>JavaScript</p> <p>60%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="60"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>TypeScript</p> <p>70%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="70"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>Angular</p> <p>75%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="75"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>Git</p> <p>50%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="50"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>Oracle</p> <p>40%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="40"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>Node JS</p> <p>40%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="40"></mat-progress-bar>
-
-    <div class="skillLinguage">
-      <p>Scrum</p> <p>40%</p>
-    </div>
-    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="40"></mat-progress-bar>
-
+    <mat-progress-bar class="mdl-color-blue" mode="determinate" value="{{skill.nivel}}"></mat-progress-bar>
   </div>
 
   <div class="cv">
@@ -87,8 +45,3 @@
   </div>
 
 </main>
-
-
-
-
-

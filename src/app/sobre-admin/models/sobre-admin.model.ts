@@ -6,7 +6,6 @@ export class Usuario {
     public cargo?: string,
     public resumo?: string,
     public empresa?: Array<Empresa>,
-    public tarefas?: string,
     public habilidades?: Array<Habilidades>,
     public foto?: File,
     public curriculo?: File,

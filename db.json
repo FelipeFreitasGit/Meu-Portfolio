@@ -31,30 +31,30 @@
           "atividades": "Fornecer suporte técnico ao ERP Sapiens, desenvolvimento de relatórios e regras, desenvolvimento de software em java, desktop, web e aplicativos mobile. Tecnologias: Java EE, Java SE, JSF com Primefaces."
         }
       ],
-      "tarefas": [
+      "habilidades": [
         {
           "nome": "Java",
-          "nivel": "70%"
+          "nivel": "70"
         },
         {
           "nome": "Angular",
-          "nivel": "60%"
+          "nivel": "60"
         },
         {
           "nome": "HTML",
-          "nivel": "80%"
+          "nivel": "80"
         },
         {
           "nome": "RXJS",
-          "nivel": "90%"
+          "nivel": "90"
         },
         {
           "nome": "NODE",
-          "nivel": "40%"
+          "nivel": "40"
         }
       ],
-      "habilidades": null,
-      "foto": null
+      "foto": null,
+      "curriculo": null
     }
   ]
 }
