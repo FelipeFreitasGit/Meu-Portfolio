@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/components/login.component';
 import { SenhaComponent } from './senha/senha.component';
 import { SobreAdminComponent } from './sobre-admin/components/sobre-admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';

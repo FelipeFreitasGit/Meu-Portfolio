@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { SobreAdminComponent } from './components/sobre-admin.component';
 import { SenhaComponent } from '../senha/senha.component';
-import { LoginComponent } from '../login/login.component';
+import { LoginComponent } from '../login/components/login.component';
 
 const routes: Routes = [
   {

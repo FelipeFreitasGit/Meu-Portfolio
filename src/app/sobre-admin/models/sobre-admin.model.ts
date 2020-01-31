@@ -5,14 +5,14 @@ export class Usuario {
     public nome?: string,
     public cargo?: string,
     public resumo?: string,
-    public empresa?: Array<Empresa>,
+    public empresas?: Array<Empresas>,
     public habilidades?: Array<Habilidades>,
     public foto?: File,
     public curriculo?: File,
   ) {}
 }
 
-export class Empresa {
+export class Empresas {
   public id: number;
   public nome: string;
   public cargo: string;

@@ -13,6 +13,7 @@ p, label {
   align-items: center;
   max-width: 2000px;
   padding: 20px 100px 20px 100px;
+  background-color: rgb(113, 89, 193);
 }
 
 mat-form-field {

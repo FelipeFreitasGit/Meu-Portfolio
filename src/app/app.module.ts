@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/components/login.component';
 import { SenhaComponent } from './senha/senha.component';
 import { SobreAdminComponent } from './sobre-admin/components/sobre-admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -14,11 +14,11 @@ import { HomeModule } from './home/home.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { MaterialModule } from './material/material.module';
 import { SobreAdminModule } from './sobre-admin/sobre-admin.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     SenhaComponent,
     NotFoundComponent,
   ],
@@ -31,7 +31,8 @@ import { SobreAdminModule } from './sobre-admin/sobre-admin.module';
     ReactiveFormsModule,
     MaterialModule,
     HomeModule,
-    SobreAdminModule
+    SobreAdminModule,
+    LoginModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

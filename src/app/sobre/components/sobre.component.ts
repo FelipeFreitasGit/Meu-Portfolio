@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HomeService } from 'src/app/home/services/home.service';
 import { SobreService } from 'src/app/sobre-admin/services/sobre-admin.service';
-import { Usuario, Empresa } from 'src/app/sobre-admin/models/sobre-admin.model';
+import { Usuario, Empresas } from 'src/app/sobre-admin/models/sobre-admin.model';
 
 @Component({
   selector: 'app-sobre',
@@ -13,7 +13,7 @@ export class SobreComponent implements OnInit {
 
   arrow: boolean;
   lado: string;
-  empresas = new Array<Empresas>();
+  empresas = new Array<EmpresasDTO>();
   public usuario: Usuario[];
 
   constructor(
@@ -28,7 +28,7 @@ export class SobreComponent implements OnInit {
       this.usuario = resp;
 
       this.usuario.forEach(emp => {
-        this.rightOrLeftTimeline(emp.empresa);
+        this.rightOrLeftTimeline(emp.empresas);
       })
     })
   }
@@ -43,7 +43,7 @@ export class SobreComponent implements OnInit {
     this.homeService.actionArrow(false);
   }
 
-  rightOrLeftTimeline(empresa: Array<Empresa>) {
+  rightOrLeftTimeline(empresa: Array<Empresas>) {
 
     empresa.forEach(raiz => {
       let copy = {
@@ -61,7 +61,7 @@ export class SobreComponent implements OnInit {
   }
 }
 
-export class Empresas {
+export class EmpresasDTO {
   public id: number;
   public nome: string;
   public cargo: string;

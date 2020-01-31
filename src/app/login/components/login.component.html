@@ -1,9 +1,9 @@
 <div class="loginBory">
   <div>
     <h1>Acessar</h1>
-    <form [formGroup]="formLogin">
+    <form [formGroup]="formLogin" (ngSubmit)="login()">
       <section>
-        <input name="email" type="text" placeholder="Digite seu e-mail" formControlName="email">
+        <input name="usuario" type="text" placeholder="Digite seu e-mail" formControlName="usuario">
       </section>
       <section>
         <input name="password" type="password" placeholder="Digite sua senha" formControlName="senha">

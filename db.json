@@ -5,7 +5,7 @@
       "nome": "Felipe Vasconcellos",
       "cargo": "Analista de Sistemas",
       "resumo": "Atuação na área de tecnologia da informação, com foco em desenvolvimento de software com tecnologias atuais do mercado, sempre seguindo padrões de projetos atuais e trabalhando em equipes dinamicamente com metodologias ágeis.",
-      "empresa": [
+      "empresas": [
         {
           "id": 1,
           "nome": "Indra | Minsait",
@@ -55,6 +55,33 @@
       ],
       "foto": null,
       "curriculo": null
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "usuario": "FelipeFreitas",
+      "senha": "123"
+    },
+    {
+      "usuario": "FelipeFreitas",
+      "senha": "123",
+      "id": 2
+    },
+    {
+      "usuario": "FelipeFreitas",
+      "senha": "123",
+      "id": 3
+    },
+    {
+      "usuario": "FelipeFreitas",
+      "senha": "123",
+      "id": 4
+    },
+    {
+      "usuario": "FelipeFreitas",
+      "senha": "123",
+      "id": 5
     }
   ]
 }

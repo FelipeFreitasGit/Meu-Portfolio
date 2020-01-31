@@ -132,6 +132,13 @@ h1 {
   .mdl-layout__header-row {
     padding: 3px;
   }
+  .foto-home {
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    box-shadow: 0 10px 10px 0px #888888;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -140,6 +147,13 @@ h1 {
   }
   .mdl-navigation__link {
     font-size: 1.3em;
+  }
+  .foto-home {
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    box-shadow: 0 10px 10px 0px #888888;
   }
 }
 
@@ -156,5 +170,12 @@ h1 {
   h1 {
     font-weight: bold;
     font-size: 2em;
+  }
+  .foto-home {
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    box-shadow: 0 10px 10px 0px #888888;
   }
 }

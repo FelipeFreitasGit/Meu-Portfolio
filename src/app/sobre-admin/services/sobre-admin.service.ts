@@ -3,34 +3,37 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Usuario } from '../models/sobre-admin.model';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable()
 export class SobreService {
 
-  API = 'http://localhost:3000/usuario'
+  urlProduction: string;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.urlProduction = `${environment.urlProduction}/usuario`;
+  }
 
   getAll(): Observable<Usuario[]> {
-    return this.http.get<Usuario[]>(this.API);
+    return this.http.get<Usuario[]>(this.urlProduction);
   }
 
   save(usuario: Usuario): Observable<Usuario> {
-    return this.http.post<Usuario>(this.API, usuario)
+    return this.http.post<Usuario>(this.urlProduction, usuario)
       .pipe(
         catchError(this.handleError<Usuario>('addUsuario'))
       )
   }
 
   remove(user: Usuario): Observable<Usuario> {
-    return this.http.delete<Usuario>(`${this.API}/${user.id}`)
+    return this.http.delete<Usuario>(`${this.urlProduction}/${user.id}`)
       .pipe(
         catchError(this.handleError<Usuario>('removerUsuario'))
       )
   }
 
   update(usuario: Usuario): Observable<Usuario> {
-    return this.http.put<Usuario>(this.API, usuario)
+    return this.http.put<Usuario>(this.urlProduction, usuario)
       .pipe(
         catchError(this.handleError<Usuario>('UpdateUsuario'))
       )
